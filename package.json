@@ -1,0 +1,19 @@
+{
+  "name": "geist-vscode-theme",
+  "displayName": "Geist Theme",
+  "description": "Geist Theme for VS Code",
+  "version": "1.0.0",
+  "author": "Pieter van Arend",
+  "license": "MIT",
+  "homepage": "https://github.com/phiewter/geist-vscode-theme#readme",
+  "bugs": {
+    "url": "https://github.com/phiewter/geist-vscode-theme/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phiewter/geist-vscode-theme.git"
+  },
+  "scripts": {
+    "test": "node src/index.js"
+  }
+}
