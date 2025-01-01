@@ -14,8 +14,14 @@ const darkTheme = getTheme({
 fs.mkdir("./themes", { recursive: true })
   .then(() =>
     Promise.all([
-      fs.writeFile("./themes/light.json", JSON.stringify(lightTheme, null, 2)),
-      fs.writeFile("./themes/dark.json", JSON.stringify(darkTheme, null, 2)),
+      fs.writeFile(
+        "./themes/geist-light-vscode-theme.json",
+        JSON.stringify(lightTheme, null, 2)
+      ),
+      fs.writeFile(
+        "./themes/geist-dark-vscode-theme.json",
+        JSON.stringify(darkTheme, null, 2)
+      ),
     ])
   )
   .catch(() => process.exit(1));

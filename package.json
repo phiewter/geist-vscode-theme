@@ -2,18 +2,33 @@
   "name": "geist-vscode-theme",
   "displayName": "Geist Theme",
   "description": "Geist Theme for VS Code",
-  "version": "1.0.0",
-  "author": "Pieter van Arend",
   "license": "MIT",
-  "homepage": "https://github.com/phiewter/geist-vscode-theme#readme",
-  "bugs": {
-    "url": "https://github.com/phiewter/geist-vscode-theme/issues"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/phiewter/geist-vscode-theme.git"
   },
+  "version": "1.0.0",
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Geist (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/geist-light-vscode-theme.json"
+      },
+      {
+        "label": "Geist (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/geist-dark-vscode-theme.json"
+      }
+    ]
+  },
   "scripts": {
     "test": "node src/index.js"
+  },
+  "dependencies": {
+    "@vscode/vsce": "^3.2.1"
   }
 }
