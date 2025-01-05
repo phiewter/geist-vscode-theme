@@ -12,6 +12,20 @@ function getTheme({ theme, name }) {
   return {
     name: name,
     colors: {
+      // Sidebar
+      "sideBar.background": secondaryBackground,
+      "sideBar.foreground": foreground,
+      "sideBar.border": border,
+      "sideBarTitle.foreground": foreground,
+      "sideBarSectionHeader.background": secondaryBackground,
+      "sideBarSectionHeader.foreground": foreground,
+      "sideBarSectionHeader.border": border,
+      "sideBarActivityBarTop.border": border,
+      "sideBarTitle.background": secondaryBackground,
+      "sideBarTitle.border": border,
+      "sideBarStickyScroll.background": secondaryBackground,
+      "sideBarStickyScroll.border": border,
+
       // Editor colors
       "editor.background": secondaryBackground,
       "editor.foreground": foreground,
