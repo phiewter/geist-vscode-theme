@@ -12,6 +12,25 @@ function getTheme({ theme, name }) {
   return {
     name: name,
     colors: {
+      // Input control
+      "input.background": background,
+      "input.foreground": secondaryForeground,
+      "input.placeholderForeground": secondaryForeground,
+      "input.border": color.gray[400],
+      "inputOption.activeBackground": color.gray[300],
+      "inputOption.hoverBackground": color.gray[200],
+      "inputOption.activeForeground": foreground,
+      "inputOption.activeBorder": color.gray[600],
+      "inputValidation.errorBackground": color.red[200],
+      "inputValidation.errorForeground": color.red[1000],
+      "inputValidation.errorBorder": color.red[600],
+      "inputValidation.infoBackground": color.blue[200],
+      "inputValidation.infoForeground": color.blue[1000],
+      "inputValidation.infoBorder": color.blue[600],
+      "inputValidation.warningBackground": color.amber[200],
+      "inputValidation.warningForeground": color.amber[1000],
+      "inputValidation.warningBorder": color.amber[600],
+
       // Side Bar
       "sideBar.background": secondaryBackground,
       "sideBar.foreground": foreground,
