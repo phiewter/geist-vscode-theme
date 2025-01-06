@@ -31,6 +31,14 @@ function getTheme({ theme, name }) {
       "inputValidation.warningForeground": color.amber[1000],
       "inputValidation.warningBorder": color.amber[600],
 
+      // Activity Bar
+      "activityBar.background": secondaryBackground,
+      "activityBar.foreground": foreground,
+      "activityBar.inactiveForeground": secondaryForeground,
+      "activityBar.border": border,
+      "activityBarBadge.background": color.blue[700],
+      "activityBarBadge.foreground": foreground,
+
       // Side Bar
       "sideBar.background": secondaryBackground,
       "sideBar.foreground": foreground,
