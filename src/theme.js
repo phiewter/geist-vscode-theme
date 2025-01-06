@@ -77,6 +77,14 @@ function getTheme({ theme, name }) {
       "diffEditor.removedLineBackground": color.red[100],
       // "editorInlayHint.foreground": color.pink[700],
       // "editorInlayHint.background": color.pink[700],
+
+      // Status Bar colors
+      "statusBar.background": secondaryBackground,
+      "statusBar.foreground": foreground,
+      "statusBar.border": border,
+      "statusBar.debuggingBackground": secondaryBackground,
+      "statusBar.debuggingForeground": foreground,
+      "statusBar.debuggingBorder": border,
     },
   };
 }
