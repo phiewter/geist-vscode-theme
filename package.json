@@ -30,6 +30,6 @@
     ]
   },
   "scripts": {
-    "test": "node src/index.js"
+    "script": "node src/index.js"
   }
 }
