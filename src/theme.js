@@ -3,16 +3,16 @@ const { getColors } = require("./colors");
 function getTheme({ theme, name }) {
   const color = getColors(theme);
 
-  const border = color.gray[200]; // #1F1F1F
-  const foreground = color.gray[1000]; // #EDEDED
-  const secondaryForeground = color.gray[900]; // #A1A1A1
-  const background = color.background[100]; // #000
-  const secondaryBackground = color.background[200]; // #0A0A0A
+  const border = color.gray[200];
+  const foreground = color.gray[1000];
+  const secondaryForeground = color.gray[900];
+  const background = color.background[100];
+  const secondaryBackground = color.background[200];
 
   return {
     name: name,
     colors: {
-      // Sidebar
+      // Side Bar
       "sideBar.background": secondaryBackground,
       "sideBar.foreground": foreground,
       "sideBar.border": border,
