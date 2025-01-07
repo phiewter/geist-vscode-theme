@@ -3,11 +3,13 @@ const { getColors } = require("./colors");
 function getTheme({ theme, name }) {
   const color = getColors(theme);
 
-  const border = color.gray[200];
-  const foreground = color.gray[1000];
-  const secondaryForeground = color.gray[900];
   const background = color.background[100];
   const secondaryBackground = color.background[200];
+
+  const foreground = color.gray[1000];
+  const secondaryForeground = color.gray[900];
+
+  const border = color.gray[200];
 
   return {
     name: name,
