@@ -56,7 +56,6 @@ function getTheme({ theme, name }) {
       // Editor colors
       "editor.background": secondaryBackground,
       "editor.foreground": foreground,
-
       "editorLineNumber.foreground": color.gray[600],
       "editorLineNumber.activeForeground": foreground,
       "editorLineNumber.dimmedForeground": color.gray[400],
@@ -66,14 +65,13 @@ function getTheme({ theme, name }) {
       "editorWidget.background": secondaryBackground,
       "editorWarning.foreground": color.amber[500],
       "editorError.foreground": color.red[500],
-
       "editorOverviewRuler.border": border,
       "editorGutter.addedBackground": color.green[600],
       "editorGutter.deletedBackground": color.red[600],
       "editorGutter.modifiedBackground": color.amber[600],
-      "diffEditor.insertedTextBackground": color.green[300],
+      "diffEditor.insertedTextBackground": color.green[100],
       "diffEditor.insertedLineBackground": color.green[100],
-      "diffEditor.removedTextBackground": color.red[300],
+      "diffEditor.removedTextBackground": color.red[100],
       "diffEditor.removedLineBackground": color.red[100],
       // "editorInlayHint.foreground": color.pink[700],
       // "editorInlayHint.background": color.pink[700],
@@ -85,6 +83,8 @@ function getTheme({ theme, name }) {
       "statusBar.debuggingBackground": secondaryBackground,
       "statusBar.debuggingForeground": foreground,
       "statusBar.debuggingBorder": border,
+      "statusBarItem.remoteBackground": secondaryBackground,
+      "statusBarItem.remoteForeground": foreground,
     },
   };
 }
