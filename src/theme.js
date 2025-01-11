@@ -85,6 +85,17 @@ function getTheme({ theme, name }) {
       "statusBar.debuggingBorder": border,
       "statusBarItem.remoteBackground": secondaryBackground,
       "statusBarItem.remoteForeground": foreground,
+
+      // Lists and trees
+      "list.activeSelectionBackground": color.gray[300],
+      "list.activeSelectionForeground": foreground,
+      "list.focusBackground": color.gray[100],
+      "list.focusOutline": "#0d0d0d", // color["gray-alpha"][100],
+      "list.hoverBackground": color.gray[200],
+      "list.errorForeground": color.red[900],
+      "list.warningForeground": color.amber[900],
+      "list.deemphasizedForeground": color.pink[700],
+      "tree.indentGuidesStroke": border,
     },
   };
 }
