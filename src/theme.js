@@ -14,6 +14,11 @@ function getTheme({ theme, name }) {
   return {
     name: name,
     colors: {
+      // Button control
+      "button.background": color.blue[700],
+      "button.foreground": foreground,
+      "button.hoverBackground": color.blue[800],
+
       // Input control
       "input.background": background,
       "input.foreground": secondaryForeground,
