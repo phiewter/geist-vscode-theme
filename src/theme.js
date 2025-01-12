@@ -101,6 +101,12 @@ function getTheme({ theme, name }) {
       "statusBar.debuggingBorder": border,
       "statusBarItem.remoteBackground": secondaryBackground,
       "statusBarItem.remoteForeground": foreground,
+
+      // Title Bar colors
+      "titleBar.activeBackground": background,
+      "titleBar.activeForeground": secondaryForeground,
+      "titleBar.inactiveBackground": secondaryBackground,
+      "titleBar.border": border,
     },
   };
 }
