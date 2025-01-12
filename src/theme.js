@@ -46,11 +46,10 @@ function getTheme({ theme, name }) {
       "list.hoverBackground": color.gray[200],
       "list.errorForeground": color.red[900],
       "list.warningForeground": color.amber[900],
-      "list.deemphasizedForeground": color.pink[700],
       "tree.indentGuidesStroke": border,
 
       // Activity Bar
-      "activityBar.background": secondaryBackground,
+      "activityBar.background": background,
       "activityBar.foreground": foreground,
       "activityBar.inactiveForeground": secondaryForeground,
       "activityBar.border": border,
