@@ -110,6 +110,17 @@ function getTheme({ theme, name }) {
           foreground: color.gray[900],
         },
       },
+      {
+        name: "Variables",
+        scope: [
+          "variable",
+          "string.constant.other.placeholder",
+          "entity.name.tage",
+        ],
+        settings: {
+          foreground: color.gray[1000],
+        },
+      },
     ],
   };
 }
