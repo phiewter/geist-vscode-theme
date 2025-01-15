@@ -102,6 +102,7 @@ function getTheme({ theme, name }) {
       "list.deemphasizedForeground": color.pink[700],
       "tree.indentGuidesStroke": border,
     },
+    tokenColors: [],
   };
 }
 
