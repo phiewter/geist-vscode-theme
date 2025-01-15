@@ -102,7 +102,15 @@ function getTheme({ theme, name }) {
       "list.deemphasizedForeground": color.pink[700],
       "tree.indentGuidesStroke": border,
     },
-    tokenColors: [],
+    tokenColors: [
+      {
+        name: "Comment",
+        scope: ["comment", "punctuation.definition.comment"],
+        settings: {
+          foreground: color.gray[900],
+        },
+      },
+    ],
   };
 }
 
