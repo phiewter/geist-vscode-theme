@@ -121,6 +121,13 @@ function getTheme({ theme, name }) {
           foreground: color.gray[1000],
         },
       },
+      {
+        name: "Keyword, Storage",
+        scope: ["keyword", "storage.type", "storage.modifier"],
+        settings: {
+          foreground: color.pink[700],
+        },
+      },
     ],
   };
 }
