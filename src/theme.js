@@ -14,6 +14,12 @@ function getTheme({ theme, name }) {
   return {
     name: name,
     colors: {
+      // Global
+      "badge.background": color.pink[700],
+      "badge.foreground": color.background,
+      focusBorder: color.gray[400],
+      "icon.foreground": color.gray[900],
+
       // Button control
       "button.background": color.blue[700],
       "button.foreground": foreground,
