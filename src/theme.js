@@ -140,6 +140,20 @@ function getTheme({ theme, name }) {
           foreground: color.pink[700],
         },
       },
+      {
+        name: "Punctuation",
+        scope: [
+          "punctuation.definition.tag",
+          "punctuation.definition.tag.html",
+          "punctuation.definition.tag.begin.html",
+          "punctuation.definition.tag.end.html",
+          "punctuation.separator.inheritance.php",
+          "punctuation.section.embedded",
+        ],
+        settings: {
+          foreground: color.gray[1000],
+        },
+      },
     ],
   };
 }
