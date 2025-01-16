@@ -128,6 +128,18 @@ function getTheme({ theme, name }) {
           foreground: color.pink[700],
         },
       },
+      {
+        name: "Operator, Misc",
+        scope: [
+          "keyword.control",
+          "constant.other.color",
+          "keyword.other.template",
+          "keyword.other.substitution",
+        ],
+        settings: {
+          foreground: color.pink[700],
+        },
+      },
     ],
   };
 }
