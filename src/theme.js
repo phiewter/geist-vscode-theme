@@ -107,6 +107,11 @@ function getTheme({ theme, name }) {
       "statusBarItem.remoteBackground": secondaryBackground,
       "statusBarItem.remoteForeground": foreground,
 
+      // Tab colors
+      "tab.border": border,
+      "tab.activeBackground": secondaryBackground,
+      "tab.inactiveBackground": background,
+
       // Title Bar colors
       "titleBar.activeBackground": background,
       "titleBar.activeForeground": secondaryForeground,
