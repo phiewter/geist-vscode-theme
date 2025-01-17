@@ -45,11 +45,12 @@ function getTheme({ theme, name }) {
       "inputValidation.warningBorder": color.amber[600],
 
       // Lists and trees
-      "list.activeSelectionBackground": color.gray[300],
+      "list.activeSelectionBackground": color.blue[300],
       "list.activeSelectionForeground": foreground,
+      "list.inactiveSelectionBackground": color.blue[100],
       "list.focusBackground": color.gray[100],
       "list.focusOutline": "#0d0d0d", // color["gray-alpha"][100],
-      "list.hoverBackground": color.gray[200],
+      "list.hoverBackground": color.blue[200],
       "list.errorForeground": color.red[900],
       "list.warningForeground": color.amber[900],
       "tree.indentGuidesStroke": border,
