@@ -20,6 +20,10 @@ function getTheme({ theme, name }) {
       focusBorder: color.gray[400],
       "icon.foreground": color.gray[900],
 
+      // Contrast colors
+      contrastActiveBorder: color.gray[1000],
+      contrastBorder: color.gray[1000],
+
       // Button control
       "button.background": color.blue[700],
       "button.foreground": foreground,
