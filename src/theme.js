@@ -17,8 +17,10 @@ function getTheme({ theme, name }) {
       // Global
       "badge.background": color.pink[700],
       "badge.foreground": color.background,
-      focusBorder: color.gray[400],
       "icon.foreground": color.gray[900],
+
+      // Base colors
+      focusBorder: color.gray[400],
 
       // Button control
       "button.background": color.blue[700],
@@ -97,6 +99,8 @@ function getTheme({ theme, name }) {
       "diffEditor.insertedLineBackground": color.green[100],
       "diffEditor.removedTextBackground": color.red[100],
       "diffEditor.removedLineBackground": color.red[100],
+      "editor.lineHighlightBorder": color.blue[600],
+      "editor.lineHighlightBackground": color.background[100],
 
       // Status Bar colors
       "statusBar.background": secondaryBackground,
