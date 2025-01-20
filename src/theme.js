@@ -22,6 +22,10 @@ function getTheme({ theme, name }) {
       // Base colors
       focusBorder: color.gray[400],
 
+      // Window colors
+      "window.activeBorder": border,
+      "window.inactiveBorder": border,
+
       // Button control
       "button.background": color.blue[700],
       "button.foreground": foreground,
