@@ -21,6 +21,8 @@ function getTheme({ theme, name }) {
 
       // Base colors
       focusBorder: color.gray[400],
+      "widget.border": border,
+      "widget.shadow": secondaryBackground,
 
       // Window colors
       "window.activeBorder": border,
