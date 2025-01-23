@@ -28,6 +28,12 @@ function getTheme({ theme, name }) {
       "window.activeBorder": border,
       "window.inactiveBorder": border,
 
+      // Dropdown control
+      "dropdown.background": background,
+      "dropdown.listBackground": color.pink[600],
+      "dropdown.border": border,
+      "dropdown.foreground": foreground,
+
       // Button control
       "button.background": color.blue[700],
       "button.foreground": foreground,
