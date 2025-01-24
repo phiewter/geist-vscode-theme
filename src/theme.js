@@ -58,6 +58,12 @@ function getTheme({ theme, name }) {
       "inputValidation.warningForeground": color.amber[1000],
       "inputValidation.warningBorder": color.amber[600],
 
+      // Scrollbar control
+      "scrollbar.shadow": border,
+      "scrollbarSlider.activeBackground": color["gray-alpha"][300],
+      "scrollbarSlider.background": color["gray-alpha"][100],
+      "scrollbarSlider.hoverBackground": color["gray-alpha"][200],
+
       // Lists and trees
       "list.activeSelectionBackground": color.blue[300],
       "list.activeSelectionForeground": foreground,
