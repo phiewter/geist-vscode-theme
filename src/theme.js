@@ -28,16 +28,16 @@ function getTheme({ theme, name }) {
       "window.activeBorder": border,
       "window.inactiveBorder": border,
 
+      // Button control
+      "button.background": color.blue[700],
+      "button.foreground": foreground,
+      "button.hoverBackground": color.blue[800],
+
       // Dropdown control
       "dropdown.background": background,
       "dropdown.listBackground": color.pink[600],
       "dropdown.border": border,
       "dropdown.foreground": foreground,
-
-      // Button control
-      "button.background": color.blue[700],
-      "button.foreground": foreground,
-      "button.hoverBackground": color.blue[800],
 
       // Input control
       "input.background": background,
