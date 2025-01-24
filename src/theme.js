@@ -15,8 +15,8 @@ function getTheme({ theme, name }) {
     name: name,
     colors: {
       // Global
-      "badge.background": color.pink[700],
-      "badge.foreground": color.background,
+      "badge.background": color.blue[700],
+      "badge.foreground": color.foreground,
       "icon.foreground": color.gray[900],
 
       // Base colors
