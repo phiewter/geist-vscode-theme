@@ -32,6 +32,11 @@ function getTheme({ theme, name }) {
       "textLink.activeForeground": color.blue[800],
       "textLink.foreground": color.blue[700],
 
+      // Action color
+      "toolbar.hoverBackground": "#00000000",
+      "toolbar.hoverOutline": secondaryForeground,
+      "toolbar.activeBackground": color["gray-alpha"][300],
+
       // Button control
       "button.background": color.blue[700],
       "button.foreground": foreground,
