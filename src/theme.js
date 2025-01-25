@@ -28,6 +28,10 @@ function getTheme({ theme, name }) {
       "window.activeBorder": border,
       "window.inactiveBorder": border,
 
+      // Text colors
+      "textLink.activeForeground": color.blue[800],
+      "textLink.foreground": color.blue[700],
+
       // Button control
       "button.background": color.blue[700],
       "button.foreground": foreground,
