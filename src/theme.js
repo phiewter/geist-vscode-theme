@@ -74,12 +74,12 @@ function getTheme({ theme, name }) {
       "scrollbarSlider.hoverBackground": color["gray-alpha"][200],
 
       // Lists and trees
-      "list.activeSelectionBackground": color.blue[300],
+      "list.activeSelectionBackground": color["gray-alpha"][300],
       "list.activeSelectionForeground": foreground,
-      "list.inactiveSelectionBackground": color.blue[100],
+      "list.inactiveSelectionBackground": color["gray-alpha"][100],
       "list.focusBackground": color.gray[100],
       "list.focusOutline": "#0d0d0d", // color["gray-alpha"][100],
-      "list.hoverBackground": color.blue[200],
+      "list.hoverBackground": color["gray-alpha"][200],
       "list.errorForeground": color.red[900],
       "list.warningForeground": color.amber[900],
       "tree.indentGuidesStroke": border,
@@ -94,7 +94,7 @@ function getTheme({ theme, name }) {
 
       // Side Bar
       "sideBar.background": secondaryBackground,
-      "sideBar.foreground": foreground,
+      "sideBar.foreground": color["gray-alpha"][900],
       "sideBar.border": border,
       "sideBarTitle.foreground": foreground,
       "sideBarSectionHeader.background": secondaryBackground,
@@ -126,8 +126,9 @@ function getTheme({ theme, name }) {
       "diffEditor.insertedLineBackground": color.green[100],
       "diffEditor.removedTextBackground": color.red[100],
       "diffEditor.removedLineBackground": color.red[100],
-      "editor.lineHighlightBorder": color.blue[600],
-      "editor.lineHighlightBackground": color.background[100],
+
+      // "editor.lineHighlightBorder": color.blue[600],
+      "editor.lineHighlightBackground": color.blue[300],
 
       // Status Bar colors
       "statusBar.background": secondaryBackground,
