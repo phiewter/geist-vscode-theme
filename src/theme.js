@@ -96,7 +96,7 @@ function getTheme({ theme, name }) {
       "sideBar.background": secondaryBackground,
       "sideBar.foreground": color["gray-alpha"][900],
       "sideBar.border": border,
-      "sideBarTitle.foreground": foreground,
+      "sideBarTitle.foreground": color["gray-alpha"][900],
       "sideBarSectionHeader.background": secondaryBackground,
       "sideBarSectionHeader.foreground": foreground,
       "sideBarSectionHeader.border": border,
