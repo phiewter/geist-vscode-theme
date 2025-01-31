@@ -151,6 +151,15 @@ function getTheme({ theme, name }) {
       "titleBar.inactiveBackground": secondaryBackground,
       "titleBar.border": border,
     },
+    tokenColors: [
+      {
+        name: "Comment",
+        scope: ["comment", "punctuation.definition.comment"],
+        settings: {
+          foreground: color.gray[900],
+        },
+      },
+    ],
   };
 }
 
