@@ -14,6 +14,7 @@ function getTheme({ theme, name }) {
   const pink = "#FF4D84"; // #FF4382, #FF3F80, #FF2A7A
   const green = "#33FF66";
   const blue = "#57A5FF";
+  const purple = "#B875FF";
 
   return {
     name: name,
@@ -108,36 +109,141 @@ function getTheme({ theme, name }) {
     },
     tokenColors: [
       {
-        name: "JSON Key - Level 0",
-        scope: [
-          "source.json meta.structure.dictionary.json support.type.property-name.json",
-        ],
+        name: "Keyword Control",
+        scope: ["keyword.control"],
         settings: {
           foreground: pink,
-          //
         },
       },
       {
-        name: "JSON Value (Double Quotes) - Level 0",
-        scope: [
-          "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
-        ],
+        name: "Storage Type",
+        scope: ["storage.type"],
         settings: {
-          foreground: green,
+          foreground: pink,
         },
       },
       {
-        name: "JSON Value (Constant) - Level 0",
-        scope: [
-          "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json constant.language.json",
-        ],
+        name: "Variable Other Constant",
+        scope: ["variable.other.constant"],
         settings: {
           foreground: blue,
         },
       },
       {
-        name: "TSX Support Class Component",
-        scope: ["support.class.component.tsx"],
+        name: "Entity Name Function",
+        scope: ["entity.name.function"],
+        settings: {
+          foreground: purple,
+        },
+      },
+      {
+        name: "Punctuation Separator Key Value",
+        scope: ["punctuation.separator.key-value.tsx"],
+        settings: {
+          foreground: pink,
+        },
+      },
+      {
+        name: "Keyword Operator Type Annotation",
+        scope: ["keyword.operator.type.annotation"],
+        settings: {
+          foreground: pink,
+        },
+      },
+      {
+        name: "Entity Name Type",
+        scope: ["entity.name.type"],
+        settings: {
+          foreground: purple,
+        },
+      },
+      {
+        name: "Entity Name Tag",
+        scope: ["entity.name.tag"],
+        settings: {
+          foreground: green,
+        },
+      },
+      {
+        name: "Support Class Component",
+        scope: ["support.class.component"],
+        settings: {
+          foreground: blue,
+        },
+      },
+      {
+        name: "Entity Other Attribute Name",
+        scope: ["entity.other.attribute-name"],
+        settings: {
+          foreground: purple,
+        },
+      },
+      {
+        name: "Keyword Operator Assignment",
+        scope: ["keyword.operator.assignment"],
+        settings: {
+          foreground: pink,
+        },
+      },
+      {
+        name: "String Quoted",
+        scope: ["string.quoted"],
+        settings: {
+          foreground: green,
+        },
+      },
+      {
+        name: "Punctuation Definition String Template",
+        scope: ["punctuation.definition.string.template"],
+        settings: {
+          foreground: green,
+        },
+      },
+      {
+        name: "Punctuation Definition Template Expression",
+        scope: ["punctuation.definition.template-expression"],
+        settings: {
+          foreground: pink,
+        },
+      },
+      {
+        name: "Variable Other Object",
+        scope: ["variable.other.object"],
+        settings: {
+          foreground: blue,
+        },
+      },
+      {
+        name: "String Template",
+        scope: ["string.template"],
+        settings: {
+          foreground: green,
+        },
+      },
+      {
+        name: "Variable Other Property",
+        scope: ["variable.other.property"],
+        settings: {
+          foreground: foreground,
+        },
+      },
+      {
+        name: "JSON Key",
+        scope: ["support.type.property-name.json"],
+        settings: {
+          foreground: pink,
+        },
+      },
+      {
+        name: "JSON Value (Double Quotes)",
+        scope: ["string.quoted.double.json"],
+        settings: {
+          foreground: green,
+        },
+      },
+      {
+        name: "JSON Value (Constant)",
+        scope: ["constant.language.json"],
         settings: {
           foreground: blue,
         },
