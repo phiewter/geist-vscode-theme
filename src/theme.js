@@ -11,6 +11,10 @@ function getTheme({ theme, name }) {
 
   const border = color.gray[200];
 
+  const pink = "#FF4D84"; // #FF4382, #FF3F80, #FF2A7A
+  const green = "#33FF66";
+  const blue = "#57A5FF";
+
   return {
     name: name,
     colors: {
@@ -109,83 +113,33 @@ function getTheme({ theme, name }) {
           "source.json meta.structure.dictionary.json support.type.property-name.json",
         ],
         settings: {
-          foreground: "#FF4D84",
-          // "#33FF66"
+          foreground: pink,
+          //
         },
       },
       {
-        name: "JSON Key - Level 1",
+        name: "JSON Value (Double Quotes) - Level 0",
         scope: [
-          "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+          "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
         ],
         settings: {
-          foreground: "#FF4D84",
-          // "#FF4382",
-          // "#FF3F80",
-          // "#FF2A7A",
+          foreground: green,
         },
       },
       {
-        name: "JSON Key - Level 2",
+        name: "JSON Value (Constant) - Level 0",
         scope: [
-          "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+          "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json constant.language.json",
         ],
         settings: {
-          foreground: "#FF4D84",
+          foreground: blue,
         },
       },
       {
-        name: "JSON Key - Level 3",
-        scope: [
-          "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
-        ],
+        name: "TSX Support Class Component",
+        scope: ["support.class.component.tsx"],
         settings: {
-          foreground: "#FF4D84",
-        },
-      },
-      {
-        name: "JSON Key - Level 4",
-        scope: [
-          "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
-        ],
-        settings: {
-          foreground: "#FF4D84",
-        },
-      },
-      {
-        name: "JSON Key - Level 5",
-        scope: [
-          "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
-        ],
-        settings: {
-          foreground: "#FF4D84",
-        },
-      },
-      {
-        name: "JSON Key - Level 6",
-        scope: [
-          "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
-        ],
-        settings: {
-          foreground: "#FF4D84",
-        },
-      },
-      {
-        name: "JSON Key - Level 7",
-        scope: [
-          "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
-        ],
-        settings: {
-          foreground: "#FF4D84",
-        },
-      },
-      {
-        name: "JSON Key - Level 8",
-        scope: [
-          "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
-        ],
-        settings: {
-          foreground: "#FF4D84",
+          foreground: blue,
         },
       },
     ],
