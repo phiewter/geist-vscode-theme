@@ -19,10 +19,39 @@ function getTheme({ theme, name }) {
   return {
     name: name,
     colors: {
+      // Global
+      "badge.background": color.blue[700],
+      "badge.foreground": color.foreground,
+      "icon.foreground": color.gray[900],
+
+      // Base colors
+      focusBorder: color.gray[400],
+      "widget.border": border,
+      "widget.shadow": secondaryBackground,
+
+      // Window colors
+      "window.activeBorder": border,
+      "window.inactiveBorder": border,
+
+      // Text colors
+      "textLink.activeForeground": color.blue[800],
+      "textLink.foreground": color.blue[700],
+
+      // Action color
+      "toolbar.hoverBackground": "#00000000",
+      "toolbar.hoverOutline": secondaryForeground,
+      "toolbar.activeBackground": color["gray-alpha"][300],
+
       // Button control
       "button.background": color.blue[700],
       "button.foreground": foreground,
       "button.hoverBackground": color.blue[800],
+
+      // Dropdown control
+      "dropdown.background": background,
+      "dropdown.listBackground": color.pink[600],
+      "dropdown.border": border,
+      "dropdown.foreground": foreground,
 
       // Input control
       "input.background": background,
@@ -43,8 +72,25 @@ function getTheme({ theme, name }) {
       "inputValidation.warningForeground": color.amber[1000],
       "inputValidation.warningBorder": color.amber[600],
 
+      // Scrollbar control
+      "scrollbar.shadow": border,
+      "scrollbarSlider.activeBackground": color["gray-alpha"][300],
+      "scrollbarSlider.background": color["gray-alpha"][100],
+      "scrollbarSlider.hoverBackground": color["gray-alpha"][200],
+
+      // Lists and trees
+      "list.activeSelectionBackground": color["gray-alpha"][300],
+      "list.activeSelectionForeground": foreground,
+      "list.inactiveSelectionBackground": color["gray-alpha"][100],
+      "list.focusBackground": color.gray[100],
+      "list.focusOutline": "#0d0d0d", // color["gray-alpha"][100],
+      "list.hoverBackground": color["gray-alpha"][200],
+      "list.errorForeground": color.red[900],
+      "list.warningForeground": color.amber[900],
+      "tree.indentGuidesStroke": border,
+
       // Activity Bar
-      "activityBar.background": secondaryBackground,
+      "activityBar.background": background,
       "activityBar.foreground": foreground,
       "activityBar.inactiveForeground": secondaryForeground,
       "activityBar.border": border,
@@ -53,9 +99,9 @@ function getTheme({ theme, name }) {
 
       // Side Bar
       "sideBar.background": secondaryBackground,
-      "sideBar.foreground": foreground,
+      "sideBar.foreground": color["gray-alpha"][900],
       "sideBar.border": border,
-      "sideBarTitle.foreground": foreground,
+      "sideBarTitle.foreground": color["gray-alpha"][900],
       "sideBarSectionHeader.background": secondaryBackground,
       "sideBarSectionHeader.foreground": foreground,
       "sideBarSectionHeader.border": border,
@@ -86,6 +132,9 @@ function getTheme({ theme, name }) {
       "diffEditor.removedTextBackground": color.red[100],
       "diffEditor.removedLineBackground": color.red[100],
 
+      // "editor.lineHighlightBorder": color.blue[600],
+      "editor.lineHighlightBackground": color.blue[300],
+
       // Status Bar colors
       "statusBar.background": secondaryBackground,
       "statusBar.foreground": foreground,
@@ -96,16 +145,16 @@ function getTheme({ theme, name }) {
       "statusBarItem.remoteBackground": secondaryBackground,
       "statusBarItem.remoteForeground": foreground,
 
-      // Lists and trees
-      "list.activeSelectionBackground": color.gray[300],
-      "list.activeSelectionForeground": foreground,
-      "list.focusBackground": color.gray[100],
-      "list.focusOutline": "#0d0d0d", // color["gray-alpha"][100],
-      "list.hoverBackground": color.gray[200],
-      "list.errorForeground": color.red[900],
-      "list.warningForeground": color.amber[900],
-      "list.deemphasizedForeground": color.pink[700],
-      "tree.indentGuidesStroke": border,
+      // Tab colors
+      "tab.border": border,
+      "tab.activeBackground": secondaryBackground,
+      "tab.inactiveBackground": background,
+
+      // Title Bar colors
+      "titleBar.activeBackground": background,
+      "titleBar.activeForeground": secondaryForeground,
+      "titleBar.inactiveBackground": secondaryBackground,
+      "titleBar.border": border,
     },
     tokenColors: [
       {
@@ -246,6 +295,13 @@ function getTheme({ theme, name }) {
         scope: ["constant.language.json"],
         settings: {
           foreground: blue,
+        },
+      },
+      {
+        name: "Comment",
+        scope: ["comment", "punctuation.definition.comment"],
+        settings: {
+          foreground: color.gray[900],
         },
       },
     ],
