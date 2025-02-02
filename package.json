@@ -18,11 +18,6 @@
   "contributes": {
     "themes": [
       {
-        "label": "Geist Light",
-        "uiTheme": "vs",
-        "path": "./themes/geist-light-vscode-theme.json"
-      },
-      {
         "label": "Geist Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/geist-dark-vscode-theme.json"
@@ -30,6 +25,6 @@
     ]
   },
   "scripts": {
-    "script": "node src/index.js"
+    "build": "node src/index.js"
   }
 }
