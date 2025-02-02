@@ -1,6 +1,6 @@
 const { getColors } = require("./colors");
 
-function getTheme({ theme, name }) {
+function getTheme({ theme, name, type }) {
   const color = getColors(theme);
 
   const background = color.background[100];
@@ -11,13 +11,14 @@ function getTheme({ theme, name }) {
 
   const border = color.gray[200];
 
-  const pink = "#FF4D84"; // #FF4382, #FF3F80, #FF2A7A
-  const green = "#33FF66";
-  const blue = "#57A5FF";
-  const purple = "#B875FF";
+  const pink = color.rayso["pink"];
+  const green = color.rayso["green"];
+  const purple = color.rayso["purple"];
+  const blue = color.rayso["blue"];
 
   return {
     name: name,
+    type: type,
     colors: {
       // Global
       "badge.background": color.blue[700],
@@ -83,7 +84,7 @@ function getTheme({ theme, name }) {
       "list.activeSelectionForeground": foreground,
       "list.inactiveSelectionBackground": color["gray-alpha"][100],
       "list.focusBackground": color.gray[100],
-      "list.focusOutline": "#0d0d0d", // color["gray-alpha"][100],
+      "list.focusOutline": "#0d0d0d",
       "list.hoverBackground": color["gray-alpha"][200],
       "list.errorForeground": color.red[900],
       "list.warningForeground": color.amber[900],
@@ -301,7 +302,7 @@ function getTheme({ theme, name }) {
         name: "Comment",
         scope: ["comment", "punctuation.definition.comment"],
         settings: {
-          foreground: color.gray[900],
+          foreground: secondaryForeground,
         },
       },
     ],
