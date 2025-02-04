@@ -8,7 +8,7 @@ A minimal and elegant VSCode theme inspired by [Vercel's Geist](https://vercel.c
 
 ## Features
 
-- Dark mode with Vercel's <Grid /> and the usage of ray.so colors
+- Dark mode with Vercel's iconic 'Grid' and the usage of ray.so colors
 - Geist-inspired color palette for a modern aesthetic
 - Optimized syntax highlighting especially for JavaScript, TypeScript, Python, Rust, and more
 - Minimal UI elements for reduced visual clutter
