@@ -8,7 +8,7 @@
     "type": "git",
     "url": "git+https://github.com/phiewter/geist-vscode-theme.git"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.95.0"
   },
@@ -24,6 +24,11 @@
       }
     ]
   },
+  "galleryBanner": {
+    "color": "#000",
+    "theme": "dark"
+  },
+  "icon": "src/logo.png",
   "scripts": {
     "build": "node src/index.js"
   }
