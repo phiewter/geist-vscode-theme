@@ -132,9 +132,7 @@ function getTheme({ theme, name, type }) {
       "diffEditor.insertedLineBackground": color.green[100],
       "diffEditor.removedTextBackground": color.red[100],
       "diffEditor.removedLineBackground": color.red[100],
-
-      // "editor.lineHighlightBorder": color.blue[600],
-      "editor.lineHighlightBackground": color.blue[300],
+      "editor.lineHighlightBackground": color["gray-alpha"][100],
 
       // Status Bar colors
       "statusBar.background": secondaryBackground,
