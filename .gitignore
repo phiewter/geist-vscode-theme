@@ -35,3 +35,6 @@ coverage/
 *.tar.gz
 *.7z
 *.rar
+
+# Ignore shadow directory
+/shadow
