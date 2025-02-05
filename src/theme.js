@@ -122,16 +122,21 @@ function getTheme({ theme, name, type }) {
       "editor.selectionHighlightBackground": color.blue[700],
       "editorGroupHeader.tabsBackground": secondaryBackground,
       "editorWidget.background": secondaryBackground,
-      "editorWarning.foreground": color.amber[500],
-      "editorError.foreground": color.red[500],
+
+      "editorWarning.foreground": color.amber[800],
+      "editorError.foreground": "#FF0000",
+
       "editorOverviewRuler.border": border,
-      "editorGutter.addedBackground": color.green[600],
-      "editorGutter.deletedBackground": color.red[600],
-      "editorGutter.modifiedBackground": color.amber[600],
+
+      "editorGutter.addedBackground": color.green[800],
+      "editorGutter.deletedBackground": color.red[800],
+      "editorGutter.modifiedBackground": color.amber[800],
+
       "diffEditor.insertedTextBackground": color.green[100],
       "diffEditor.insertedLineBackground": color.green[100],
       "diffEditor.removedTextBackground": color.red[100],
       "diffEditor.removedLineBackground": color.red[100],
+
       "editor.lineHighlightBackground": color["gray-alpha"][100],
 
       // Status Bar colors
@@ -154,6 +159,12 @@ function getTheme({ theme, name, type }) {
       "titleBar.activeForeground": secondaryForeground,
       "titleBar.inactiveBackground": secondaryBackground,
       "titleBar.border": border,
+
+      // Git colors
+      "gitDecoration.untrackedResourceForeground": color.green[900],
+      "gitDecoration.modifiedResourceForeground": "#F8C16A", // "#F5B83D", // color.amber[900],
+      "gitDecoration.deletedResourceForeground": color.red[900],
+      "gitDecoration.ignoredResourceForeground": "#FFFFFF65",
     },
     tokenColors: [
       {
