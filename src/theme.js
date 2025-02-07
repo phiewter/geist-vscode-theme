@@ -122,21 +122,16 @@ function getTheme({ theme, name, type }) {
       "editor.selectionHighlightBackground": color.blue[700],
       "editorGroupHeader.tabsBackground": secondaryBackground,
       "editorWidget.background": secondaryBackground,
-
       "editorWarning.foreground": color.amber[800],
       "editorError.foreground": "#FF0000",
-
       "editorOverviewRuler.border": border,
-
       "editorGutter.addedBackground": color.green[800],
       "editorGutter.deletedBackground": color.red[800],
       "editorGutter.modifiedBackground": color.amber[800],
-
       "diffEditor.insertedTextBackground": color.green[100],
       "diffEditor.insertedLineBackground": color.green[100],
       "diffEditor.removedTextBackground": color.red[100],
       "diffEditor.removedLineBackground": color.red[100],
-
       "editor.lineHighlightBackground": color["gray-alpha"][100],
 
       // Status Bar colors
