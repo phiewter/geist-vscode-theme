@@ -10,7 +10,7 @@ A minimal and elegant Visual Studio Code theme inspired by [Vercel's Geist](http
 
 - Dark mode with Vercel's iconic 'Grid' and the usage of ray.so colors
 - Geist-inspired color palette for a modern aesthetic
-- Enhanced syntax highlighting for JavaScript, TypeScript, Python, Rust, and more
+- Enhanced syntax highlighting for JavaScript, TypeScript
 - Minimal UI elements to reduce visual clutter
 
 ## Custom Geist Theme
